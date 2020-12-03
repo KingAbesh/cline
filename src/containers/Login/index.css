@@ -1,0 +1,29 @@
+.divider {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+    white-space: nowrap;
+    margin-top: 0.6rem;
+    width: 100%;
+  }
+  .divider > span {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    width: 30px;
+  }
+  div.divider > span:before,
+  div.divider > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    border-top: solid 1px #D3D3D3;
+  }
+  div.divider > span:before {
+    right: 100%;
+  }
+  div.divider > span:after {
+    left: 100%;
+  }
