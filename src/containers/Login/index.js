@@ -17,8 +17,7 @@ import { ShowMessage } from '../../utils/alert';
 import { useGoogleLogout } from 'react-google-login';
 import { useEffect } from 'react';
 
-const clientId =
-  '907358678928-77306in496ner0apn3kjh1evnueqd6v8.apps.googleusercontent.com';
+const clientId = process.env.REACT_GOOGLE_KEY;
 
 export const Login = props => {
   const toast = useToast();
