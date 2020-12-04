@@ -101,7 +101,7 @@ const MobileNav = ({ removeNavbarHandler, mobileNavOpen }) => {
             fontSize="1.2rem"
             fontWeight="600"
             ml={4}
-            mt={16}
+            mt={8}
           >
             Sources
           </Text>

@@ -15,8 +15,18 @@ export const Comment = ({ flex, src, alt, heading, text, subtext }) => {
       py={8}
     >
       <Flex align="center">
-        <Image src={src} alt={alt} w={{ base: "40px", md: "70px" }} h={{ base: "40px", md: "70px" }} />
-        <Text color="grey" textAlign="start" fontSize={{ base: '0.9rem', md: '1.1rem' }} ml={4}>
+        <Image
+          src={src}
+          alt={alt}
+          w={{ base: '40px', md: '70px' }}
+          h={{ base: '40px', md: '70px' }}
+        />
+        <Text
+          color="grey"
+          textAlign="start"
+          fontSize={{ base: '0.9rem', md: '1.1rem' }}
+          ml={4}
+        >
           {heading}
         </Text>
       </Flex>
@@ -33,14 +43,19 @@ export const Comment = ({ flex, src, alt, heading, text, subtext }) => {
           color="grey"
           textAlign="start"
           fontSize={{ base: '0.9rem', md: '1.1rem' }}
-          lineHeight="40px"
+          lineHeight={{ base: '30px', md: '40px' }}
           wordBreak="break-word"
         >
           {subtext}
         </Text>
       </Flex>
       <Flex align="center" mt={2}>
-        <Link to="!#" color="cline.purple" opacity="0.8" fontSize={{ base: '0.9rem', md: '1.1rem' }}>
+        <Link
+          to="!#"
+          color="cline.purple"
+          opacity="0.8"
+          fontSize={{ base: '0.9rem', md: '1.1rem' }}
+        >
           Repost
         </Link>
         <Text
@@ -51,12 +66,17 @@ export const Comment = ({ flex, src, alt, heading, text, subtext }) => {
         >
           &bull;
         </Text>
-        <Link to="!#" color="cline.purple" opacity="0.8" fontSize={{ base: '0.9rem', md: '1.1rem' }}>
+        <Link
+          to="!#"
+          color="cline.purple"
+          opacity="0.8"
+          fontSize={{ base: '0.9rem', md: '1.1rem' }}
+        >
           Share
         </Link>
       </Flex>
       <Flex mt={4} align="center">
-        <RoundedButton color="#000000" content="F" px="30px"/>
+        <RoundedButton color="#000000" content="F" px="30px" />
         <Input
           variant="filled"
           placeholder="Add a comment"
