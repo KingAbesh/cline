@@ -14,8 +14,8 @@ export const YouTube = ({ src, heading, alt }) => {
       justify="space-between"
     >
       <Flex align="center" px={4} py={4}>
-        <Image src={src} alt={alt} w="70px" h="70px" />
-        <Text color="grey" textAlign="start" fontSize="1.1rem" ml={2}>
+        <Image src={src} alt={alt} w={{ base: "40px", md: "70px" }} h={{ base: "40px", md: "70px" }} />
+        <Text color="grey" textAlign="start" fontSize={{ base: '0.9rem', md: '1.1rem' }} ml={2}>
           {heading}
         </Text>
       </Flex>

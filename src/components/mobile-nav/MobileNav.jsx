@@ -30,7 +30,7 @@ const MobileNav = ({ removeNavbarHandler, mobileNavOpen }) => {
       d={mobileNavOpen ? 'block' : 'none'}
     >
       <Container>
-        <Flex mb="3rem" justify="space-between" align="center" mt={6}>
+        <Flex mb="3rem" justify="space-between" align="center" mt={2}>
           <Link
             href="#!"
             _hover={{ textDecoration: 'none' }}
@@ -39,6 +39,8 @@ const MobileNav = ({ removeNavbarHandler, mobileNavOpen }) => {
             <Image
               _hover={{ transform: 'scale(1.1)' }}
               transition=".3s ease-out"
+              w="40px"
+              h="40px"
               alt="Logo"
               src={edtwist}
             />
@@ -68,11 +70,12 @@ const MobileNav = ({ removeNavbarHandler, mobileNavOpen }) => {
         </Flex>
 
         <Flex
-          fontFamily="inter"
           alignItems="flex-start"
           justifyContent="space-between"
           flexDir="column"
-          height="60vh"
+          h="auto"
+          mb={4}
+        //   height="60vh"
         >
           <Flex justify="space-around" align="center" flex="1" w="100%" mb={8}>
             <Image src={thunder} alt="edtwist" h="40px" w="40px" />
@@ -104,7 +107,7 @@ const MobileNav = ({ removeNavbarHandler, mobileNavOpen }) => {
           </Text>
           {navItems.map((item, index) => {
             return (
-              <Flex align="flex-end" mt={2} key={index}>
+              <Flex align="flex-end" my={2} key={index}>
                 <Image
                   src={item.icon}
                   alt={item.title}

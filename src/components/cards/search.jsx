@@ -9,21 +9,26 @@ export const Search = () => {
     <Flex
       bgColor="#FFFFFF"
       borderRadius="10px"
-      borderColor='cline.purple'
-      borderWidth={clicked ? "2px" : ""}
+      borderColor="cline.purple"
+      borderWidth={clicked ? '2px' : ''}
       h={{ base: '50%', lg: 'auto' }}
       flex={1}
       mb={4}
-      px={2}
+      px={{ base: 0, md: 2 }}
       py={4}
       onClick={() => setClicked(clicked => !clicked)}
     >
       <Flex flexDir="column" flex="1" justify="center" px={4}>
         <Flex flexDir="column">
-          <Text fontWeight="bold" fontSize="1.2rem" textAlign="start" mb={4}>
+          <Text
+            fontWeight="bold"
+            fontSize={{ base: '1rem', md: '1.2rem' }}
+            textAlign="start"
+            mb={4}
+          >
             Search
           </Text>
-          <Text color="grey" textAlign="start" fontSize="1.1rem" mb={4}>
+          <Text color="grey" textAlign="start" fontSize={{ base: '0.9rem', md: '1.1rem' }} mb={4}>
             Your home base for all your resources
           </Text>
         </Flex>
@@ -41,10 +46,11 @@ export const Search = () => {
               outline: 'none',
             }}
             _focus={{ outline: 'none' }}
+            fontSize={{ base: '0.9rem', md: '1.1rem' }}
           >
             Tour
           </Button>
-          <Link to="!#" color="cline.purple" opacity="0.8">
+          <Link to="!#" color="cline.purple" opacity="0.8" fontSize={{ base: '0.9rem', md: '1.1rem' }}>
             Got it
           </Link>
         </Flex>

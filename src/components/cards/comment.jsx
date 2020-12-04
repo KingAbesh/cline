@@ -15,15 +15,15 @@ export const Comment = ({ flex, src, alt, heading, text, subtext }) => {
       py={8}
     >
       <Flex align="center">
-        <Image src={src} alt={alt} w="70px" h="70px" />
-        <Text color="grey" textAlign="start" fontSize="1.1rem" ml={4}>
+        <Image src={src} alt={alt} w={{ base: "40px", md: "70px" }} h={{ base: "40px", md: "70px" }} />
+        <Text color="grey" textAlign="start" fontSize={{ base: '0.9rem', md: '1.1rem' }} ml={4}>
           {heading}
         </Text>
       </Flex>
       <Flex flexDir="column">
         <Text
           fontWeight="700"
-          fontSize="1.4rem"
+          fontSize={{ base: '1.2rem', md: '1.4rem' }}
           textAlign="start"
           my={4}
         >
@@ -32,7 +32,7 @@ export const Comment = ({ flex, src, alt, heading, text, subtext }) => {
         <Text
           color="grey"
           textAlign="start"
-          fontSize="1.1rem"
+          fontSize={{ base: '0.9rem', md: '1.1rem' }}
           lineHeight="40px"
           wordBreak="break-word"
         >
@@ -40,7 +40,7 @@ export const Comment = ({ flex, src, alt, heading, text, subtext }) => {
         </Text>
       </Flex>
       <Flex align="center" mt={2}>
-        <Link to="!#" color="cline.purple" opacity="0.8">
+        <Link to="!#" color="cline.purple" opacity="0.8" fontSize={{ base: '0.9rem', md: '1.1rem' }}>
           Repost
         </Link>
         <Text
@@ -51,7 +51,7 @@ export const Comment = ({ flex, src, alt, heading, text, subtext }) => {
         >
           &bull;
         </Text>
-        <Link to="!#" color="cline.purple" opacity="0.8">
+        <Link to="!#" color="cline.purple" opacity="0.8" fontSize={{ base: '0.9rem', md: '1.1rem' }}>
           Share
         </Link>
       </Flex>

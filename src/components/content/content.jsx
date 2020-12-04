@@ -22,7 +22,7 @@ export const Content = () => {
       >
         <Search />
         <Comment
-          flex={{ base: 1, md: 3 }}
+          flex={3}
           src={nypl}
           alt="search"
           heading="New York Public Library"
