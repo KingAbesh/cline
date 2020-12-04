@@ -46,7 +46,7 @@ export const Login = props => {
   };
 
   const onFailure = res => {
-    ShowMessage('Error', 'Failed to log in', 'error', toast);
+    // ShowMessage('Error', 'Failed to log in', 'error', toast);
   };
 
   // this is just to ensure you can navigate to this page and test this feature as much as you can
