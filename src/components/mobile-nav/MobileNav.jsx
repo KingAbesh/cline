@@ -19,7 +19,6 @@ const MobileNav = ({ removeNavbarHandler, mobileNavOpen }) => {
   return (
     <Box
       position="fixed"
-      overflowY="scroll"
       zIndex="10"
       top="0"
       left="0"
@@ -30,7 +29,7 @@ const MobileNav = ({ removeNavbarHandler, mobileNavOpen }) => {
       d={mobileNavOpen ? 'block' : 'none'}
     >
       <Container>
-        <Flex mb="3rem" justify="space-between" align="center" mt={2}>
+        <Flex mb="1rem" justify="space-between" align="center" mt={2}>
           <Link
             href="#!"
             _hover={{ textDecoration: 'none' }}
