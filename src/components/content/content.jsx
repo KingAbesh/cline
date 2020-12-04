@@ -35,7 +35,7 @@ export const Content = () => {
         w={{ base: "100%", lg: "50%"}}
         flexDir="column"
         ml={{ base: 0, lg: 4 }}
-        mt={{ base: 4, md: 0 }}
+        mt={{ base: 4, lg: 0 }}
       >
         <Comment
           flex={1}

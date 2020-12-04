@@ -19,10 +19,11 @@ const MobileNav = ({ removeNavbarHandler, mobileNavOpen }) => {
   return (
     <Box
       position="fixed"
+      overflowY="scroll"
       zIndex="10"
       top="0"
       left="0"
-      minHeight="100vh"
+      maxHeight="100vh"
       h="100vh"
       width="100%"
       backgroundColor="#FFFFFF"
