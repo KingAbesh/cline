@@ -75,7 +75,7 @@ const MobileNav = ({ removeNavbarHandler, mobileNavOpen }) => {
           flexDir="column"
           h="auto"
           mb={4}
-        //   height="60vh"
+          //   height="60vh"
         >
           <Flex justify="space-around" align="center" flex="1" w="100%" mb={8}>
             <Image src={thunder} alt="edtwist" h="40px" w="40px" />

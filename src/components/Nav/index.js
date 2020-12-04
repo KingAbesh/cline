@@ -17,7 +17,7 @@ export const Nav = ({openNavBar}) => {
     <Flex
       w="100%"
       py={4}
-      px={2}
+      px={4}
       boxShadow="0px 5px 15px -10px rgba(0,0,0,0.75)"
       justify="space-between"
     >
