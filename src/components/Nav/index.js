@@ -26,7 +26,6 @@ export const Nav = ({openNavBar}) => {
         <InputGroup flex={1} mr={4} d={{ base: 'none', md: 'flex' }}>
           <Input
             variant="filled"
-            placeholder="All"
             backgroundColor="cline.light-gray"
             _focus={{ outline: 'none' }}
           />

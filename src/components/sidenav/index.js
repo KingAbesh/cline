@@ -17,7 +17,6 @@ export const SideNav = () => {
       <InputGroup>
         <Input
           variant="filled"
-          placeholder="All"
           backgroundColor="cline.alt-gray"
           _focus={{ outline: 'none' }}
         />
